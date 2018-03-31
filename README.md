@@ -6,7 +6,7 @@ This is a Freecodecamp Backend Challenge. This microservice shortens urls. Yipee
 Run my code
 ------------
 
-[See the live code here](https://glitch.com/about).
+[See the live code here](https://url-squasher.glitch.me/).
 
 OR
 
