@@ -1,27 +1,23 @@
-Welcome to the Glitch BETA
+Welcome my project, url-squasher
 ==========================
 
-Click `Show` in the header to see your app live. Updates to your code will instantly deploy and update live.
+This is a Freecodecamp Backend Challenge. This microservice shortens urls. Yipee!
 
-**Glitch** is the friendly community where you'll build the app of your dreams. Glitch lets you instantly create, remix, edit, and host an app, bot or site, and you can invite collaborators or helpers to simultaneously edit code with you.
-
-Find out more [about Glitch](https://glitch.com/about).
-
-
-Your Project
+Run my code
 ------------
 
-On the front-end,
-- edit `public/client.js`, `public/style.css` and `views/index.html`
-- drag in `assets`, like images or music, to add them to your project
+[See the live code here](https://glitch.com/about).
 
-On the back-end,
-- your app starts at `server.js`
-- add frameworks and packages in `package.json`
-- safely store app secrets in `.env` (nobody can see this but you and people you invite)
+OR
+
+Run my app on your local machine.
+
+1. Clone this Project to your device.
+2. Run **npm start** to start the server.
+3. Open your browser to localhost:*port (provided in console)*
 
 
-Made by [Fog Creek](https://fogcreek.com/)
+Made by [Alex Cannon](https://alex-cannon.github.io/)
 -------------------
 
 \ ゜o゜)ノ
