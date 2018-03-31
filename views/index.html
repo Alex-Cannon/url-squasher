@@ -1,0 +1,81 @@
+<!-- This is a static file -->
+<!-- served from your routes in server.js -->
+
+<!-- You might want to try something fancier: -->
+<!-- html/nunjucks docs: https://mozilla.github.io/nunjucks/ -->
+<!-- pug: https://pugjs.org/ -->
+<!-- haml: http://haml.info/ -->
+<!-- hbs(handlebars): http://handlebarsjs.com/ -->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>URL-Squasher</title>
+    <meta name="description" content="Microservice that Shortens URLs">
+    <link id="favicon" rel="icon" href="https://glitch.com/edit/favicon-app.ico" type="image/x-icon">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/style.css">
+  </head>
+  <body>
+    <header>
+      <h1>
+        URL Squasher
+      </h1>
+      <h2>
+        Shorten long URLs with this Microservice!
+      </h2>
+    </header>
+
+    <div>
+      <h2>
+        For Users -
+      </h2>
+      <p>
+        Simply use the form below to get a shortened URL. Simple and Awesome.<br/>
+      </p>
+      <p>
+        You can visit this link at any time to be redirected to your long url. Life's too short to type all those characters. Hahaha.
+      </p>
+      <form method="GET">
+        <input type="text" placeholder="Type Long URL here" id="long_url"/>
+        <input type="submit" value="Submit" onclick="this.form.action=document.getElementById('long_url');" />
+        <label>Shortened URL: <span id="shortened_url"></span></label>
+      </form>
+      <h2>
+        For Devs -
+      </h2>
+      <p>
+        Shoot a GET request to the link below to get a shortened URL.
+      </p>
+      <div>
+        https://url-squasher.glitch.me/new/<b>https://your-long-url.com/</b>
+      </div>
+      <div class="accent">
+        <h3>
+          Example Usage:
+        </h3>
+        <p>
+          <span class="arrow">GET -&gt;</span> https://url-squasher.glitch.me/new/<b>https://your-long-url.com/</b>
+        </p>
+        <p>
+          <span class="arrow">JSON -&gt;</span> {old_url: "http://old-url.com", short_url: "https://url-squasher.glitch.me/<b>url_id</b>"}
+        </p>
+      </div>
+    </div>
+
+    <footer>
+      <a href="https://glitch.com">
+        Remix this in Glitch
+      </a>
+    </footer>
+
+    <!-- Your web-app is https, so your scripts need to be too -->
+    <script src="https://code.jquery.com/jquery-2.2.1.min.js"
+            integrity="sha256-gvQgAFzTH6trSrAWoH1iPo9Xc96QxSZ3feW6kem+O00="
+            crossorigin="anonymous"></script>
+    <script src="/client.js"></script>
+
+  </body>
+</html>
